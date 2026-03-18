@@ -1,0 +1,1 @@
+import{a}from"./index-CVQ_QKVR.js";const o={catalog:()=>a.get("/api/public/catalog").then(e=>e.data),joinQueue:e=>a.post("/api/queue/join",e).then(t=>t.data),getMyTokens:()=>a.get("/api/queue/my-tokens").then(e=>e.data),getPayments:()=>a.get("/api/queue/payments").then(e=>e.data)};export{o as q};

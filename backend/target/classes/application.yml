@@ -1,0 +1,40 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:digital_queue_db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate:
+        format_sql: true
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+  sql:
+    init:
+      mode: never
+  mail:
+    host: localhost
+    port: 1025
+    username: ""
+    password: ""
+
+app:
+  jwt:
+    secret: ZGlnaXRhbHF1ZXVlbWFuYWdlbWVudHN5c3RlbXN1cGVyc2VjdXJla2V5MTIzNDU2Nzg5MA==
+    expiration: 86400000
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html

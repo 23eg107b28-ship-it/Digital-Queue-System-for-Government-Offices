@@ -1,0 +1,1 @@
+import{j as e}from"./query-BjAj7zVE.js";import{B as a,a as r}from"./mui-YHv2tyor.js";function x({title:s,description:o,action:t}){return e.jsxs(a,{className:"mb-6 flex flex-col gap-4 md:flex-row md:items-end md:justify-between",children:[e.jsxs("div",{children:[e.jsx(r,{variant:"h4",fontWeight:700,children:s}),e.jsx(r,{color:"text.secondary",children:o})]}),t]})}export{x as P};
