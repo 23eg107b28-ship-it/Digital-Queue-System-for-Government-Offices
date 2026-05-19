@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: digital-queue-backend
+    env: docker
+    region: ohio
+    plan: free
+    repo: https://github.com/23eg107b28-ship-it/Digital-Queue-System-for-Government-Offices
+    rootDir: backend
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
